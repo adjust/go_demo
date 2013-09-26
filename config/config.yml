@@ -4,17 +4,17 @@ config_file: GO_CONFIG  # defaults to ./config/config.yaml
 
 development:
     env: development
-    branch: master
+    branch: feature_branch
 
 staging:
     env: staging
     log_file: /var/log/gogo/gogo.log
-    branch: master
+    branch: feature_branch
 
 production:
     env: production
     log_file: /var/log/gogo/gogo.log
-    branch: master
+    branch: feature_branch
 
 defaults:
     log_file: ./log/server.log
