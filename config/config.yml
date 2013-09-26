@@ -1,0 +1,35 @@
+# environment variables
+environment: GO_ENV     # defaults to development
+config_file: GO_CONFIG  # defaults to ./config/config.yaml
+
+development:
+    env: development
+    branch: master
+
+staging:
+    env: staging
+    log_file: /var/log/gogo/gogo.log
+    branch: master
+
+production:
+    env: production
+    log_file: /var/log/gogo/gogo.log
+    branch: master
+
+defaults:
+    log_file: ./log/server.log
+    port: 8080
+    cookie_domain: localhost
+    redis:
+        host: localhost
+        port: 6379
+        db: 0
+    amqp:
+        user: guest
+        pass: guest
+        host: localhost
+        port: 5672
+    postgres:
+        user: postgres
+        host: localhost
+        db: --- REQUIRED

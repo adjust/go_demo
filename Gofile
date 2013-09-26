@@ -1,0 +1,12 @@
+{
+    "env" : [
+        {
+            "name" : "development",
+            "packages": [
+                { "name" : "github.com/adeven/goenv","branch" : "master" },
+                { "name" : "github.com/adeven/go_demo","branch" : "." }
+            ]
+        }
+   ],
+   "testdir" : "test"
+}
