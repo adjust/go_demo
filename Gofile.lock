@@ -12,6 +12,10 @@
                         "Branch": "master"
                     },
                     {
+                        "Name": "github.com/matttproud/gocheck",
+                        "Branch": "master"
+                    },
+                    {
                         "Name": "github.com/adeven/go-gypsy",
                         "Branch": "master"
                     }
