@@ -3,6 +3,7 @@
         {
             "name" : "development",
             "packages": [
+                { "name" : "github.com/matttproud/gocheck","branch" : "master" },
                 { "name" : "github.com/adeven/goenv","branch" : "master" },
                 { "name" : "github.com/adeven/go_demo","branch" : "." }
             ]
