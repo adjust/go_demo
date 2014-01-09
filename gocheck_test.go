@@ -1,4 +1,4 @@
-package hello_test
+package main
 
 import (
 	. "github.com/matttproud/gocheck"
