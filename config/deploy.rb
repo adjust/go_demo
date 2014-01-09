@@ -4,13 +4,13 @@ set :repository, "git@github.com:adeven/go_demo.git"
 
 ssh_options[:forward_agent] = true
 
-set :user, 'gogo'
+set :user, 'go_demo'
 set :deploy_to, "/home/#{user}/app"
 set :branch, "master"
-set :start_daemon, '/etc/init.d/gogo'
+set :start_daemon, '/etc/init.d/go_demo'
 
 task :staging do
-  server "1.stage.adjust.io", :app
+  server "stage.adjust.io", :app
 end
 
 after 'deploy:update_code', 'go:build'
