@@ -23,7 +23,7 @@ namespace :go do
     run "mkdir #{release_path}/bin"
     run "mkdir -p #{release_path}/.go/src/github.com/adeven/gogo"
     run "cd #{release_path} && goem bundle q"
-    run "cd #{release_path} &&  goem build #{release_path}/bin/gogo"
+    run "cd #{release_path} &&  goem build #{release_path}/bin/go_demo"
   end
 
   task :start, :roles => :app do
