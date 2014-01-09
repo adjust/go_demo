@@ -12,7 +12,7 @@ func Gogo(goenv *goenv.Goenv) {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(
 			w,
-			"this is env %s and branch %s",
+			"hi, this is env %s and branch %s",
 			goenv.Get("env", ""),
 			goenv.Get("branch", ""),
 		)
